@@ -7,6 +7,15 @@ body{
     padding-top: 10px;
 }
 
+.jumbotron-detalle{
+  background-color : steelblue !important;
+  color: white;
+}
+
+.img-logo{
+  width: 50px;
+}
+
 /*Animacion*/
 .animated {
     -webkit-animation-duration: 1s;

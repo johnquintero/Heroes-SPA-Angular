@@ -1,0 +1,17 @@
+<div class="jumbotron jumbotron-detalle">
+    <div class="row">
+        <div class="col-md-4">
+            <img class="img-fluid" [src]="heroe.img" [alt]="heroe.nombre">
+        </div>
+        <div class="col-md-8">
+            <h1 class="display-4">{{ heroe.nombre | uppercase}}</h1> 
+            <hr>
+            <p class="lead">{{ heroe.bio }}</p>
+            <p><small> Fecha aparición - {{heroe.aparicion | date:'y'}}</small></p>
+            <hr class="my-4">
+            <img *ngIf="heroe.casa == 'Marvel'" src="assets/img/marvel-logo.png" alt="Marvel" class="img-logo"/>
+            <img *ngIf="heroe.casa == 'DC'" src="assets/img/DC-logo.png" alt="Marvel"  class="img-logo"/>
+        </div>
+    </div>
+</div>
+<a class="btn btn-outline-primary" [routerLink]="['/heroes']">Volver a Heroes <span class="sr-only">(current)</span></a>
