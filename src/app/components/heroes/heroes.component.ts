@@ -36,6 +36,6 @@ export class HeroesComponent implements OnInit {
       this._router.navigate(['/heroe',idx]);
   }
 
-  buscar
+  
 
 }
